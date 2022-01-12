@@ -16,5 +16,5 @@ Para portifólio estou desenvolvendo o APP com framework FLUTTER
 Style Guide do design do projeto
 
 <p float="left">
-  <img src="/screen/styleguide.png" width="250" />
+  <img src="/screens/styleguide.png" width="250" />
  
