@@ -2,7 +2,7 @@
 
 
 * [Introdução](#Introdução)
-* [Style_Guide](#Style Guide)
+* [StyleGuide](#StyleGuide)
 
 ## Introdução
 
@@ -11,10 +11,10 @@ Link: https://www.figma.com/proto/XExdzxxiE84GWugTI3d2Ih/T.A.M.A.S.?node-id=0%3A
 
 Para portifólio estou desenvolvendo o APP com framework FLUTTER
 
-## Style Guide
+## StyleGuide
 
 Style Guide do design do projeto
 
 <p float="left">
-  <img src="/screens/styleguide.png" width="250" />
+  <img src="/screens/styleguide.png" width="700" />
  
