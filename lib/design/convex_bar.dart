@@ -1,6 +1,6 @@
 import 'package:convex_bottom_bar_fix/convex_bottom_bar_fix.dart';
 import 'package:flutter/material.dart';
-import 'package:tamas/colors.dart';
+import 'package:tamas/design/colors.dart';
 import 'package:tamas/info_container.dart';
 
 class Convex_Bar extends StatefulWidget {
@@ -21,8 +21,12 @@ class _Convex_BarState extends State<Convex_Bar> {
             children: [
               Expanded(child:
               TabBarView(children: [
-                Info_Container('REMÉDIOS'),
-                Info_Container('HISTÓRICO'),
+                Info_Container(
+                  'REMÉDIOS',
+                  button: 'adicionar remédio',
+                info: 'Adicione novos remédios sempre que necessário'),
+                Info_Container('HISTÓRICO',
+                    ),
                 Info_Container('CONFIGURAÇÕES'),
               ])),
             ],
