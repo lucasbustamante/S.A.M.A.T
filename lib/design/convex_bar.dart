@@ -1,7 +1,10 @@
 import 'package:convex_bottom_bar_fix/convex_bottom_bar_fix.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:tamas/design/colors.dart';
 import 'package:tamas/info_container.dart';
+
+import '../profile.dart';
 
 class Convex_Bar extends StatefulWidget {
 
@@ -24,6 +27,9 @@ class _Convex_BarState extends State<Convex_Bar> {
                 Info_Container(
                   'REMÉDIOS',
                   button: 'adicionar remédio',
+                teste: (){Navigator.push(context, PageTransition(child: Profile(),
+                    type: PageTransitionType.bottomToTop,
+                duration: Duration(milliseconds: 400)));},
                 info: 'Adicione novos remédios sempre que necessário'),
                 Info_Container('HISTÓRICO',
                     ),

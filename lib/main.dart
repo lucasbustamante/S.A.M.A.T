@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tamas/design/convex_bar.dart';
+import 'package:tamas/profile.dart';
 
 void main (){
   runApp(MyApp());

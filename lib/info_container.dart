@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:tamas/design/button.dart';
 import 'package:tamas/design/colors.dart';
 import 'package:tamas/profile.dart';
+import 'package:tamas/profile_button.dart';
 
 class Info_Container extends StatelessWidget {
   final String text;
   final String? button;
   final String? info;
-  Info_Container(this.text,{this.button, this.info});
+  final Function()? teste;
+  Info_Container(this.text,{this.button, this.info, this.teste});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +18,8 @@ class Info_Container extends StatelessWidget {
       padding: const EdgeInsets.only(left: 20, right: 20, top: 40),
       child: Column(crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Profile(),
+          Profile_Button(
+          ),
           SizedBox(height: MediaQuery.of(context).size.height/90),
           Center(child:
           Text(text, style:
@@ -43,15 +47,11 @@ class Info_Container extends StatelessWidget {
         Center(
           child: Column(
             children: [
-              if (button != null) Button(button!),
+              if (button != null) Button(button!, onTap: teste,),
               if (info != null) Padding(
          padding: const EdgeInsets.only(left: 66, right: 66, top: 10),
          child: Text(info!,textAlign: TextAlign.center,),
        ),
-              // Padding(
-              //   padding: const EdgeInsets.only(left: 66, right: 66, top: 10),
-              //   child: Text(info!,textAlign: TextAlign.center,),
-              // ),
             ],
           ),
         )
