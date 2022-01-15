@@ -9,8 +9,8 @@ class Info_Container extends StatelessWidget {
   final String text;
   final String? button;
   final String? info;
-  final Function()? teste;
-  Info_Container(this.text,{this.button, this.info, this.teste});
+  final Function()? onTap;
+  Info_Container(this.text,{this.button, this.info, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -47,10 +47,11 @@ class Info_Container extends StatelessWidget {
         Center(
           child: Column(
             children: [
-              if (button != null) Button(button!, onTap: teste,),
+              if (button != null) Button(button!, onTap: onTap,),
               if (info != null) Padding(
          padding: const EdgeInsets.only(left: 66, right: 66, top: 10),
-         child: Text(info!,textAlign: TextAlign.center,),
+         child: Text(info!,textAlign: TextAlign.center, style:
+         TextStyle(color: kFontColor),),
        ),
             ],
           ),

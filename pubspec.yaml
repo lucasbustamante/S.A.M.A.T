@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   convex_bottom_bar_fix: ^3.0.1
   page_transition: ^2.0.4
+  lottie: ^1.2.1
 
 dev_dependencies:
   flutter_test:
@@ -63,9 +64,38 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/calendar.json
+
+  fonts:
+    - family: NeusaNextPro
+      fonts:
+        - asset: assets/fonts/NeusaNextPro/NeusaNextPro-CompactLight.ttf
+          weight: 200
+        - asset: assets/fonts/NeusaNextPro/NeusaNextPro-CompactRegular.ttf
+          weight: 200
+          style: normal
+
+        - asset: assets/fonts/NeusaNextPro/NeusaNextPro-CondensedLight.ttf
+          weight: 200
+        - asset: assets/fonts/NeusaNextPro/NeusaNextPro-CondensedRegular.ttf
+          weight: 200
+          style: normal
+
+        - asset: assets/fonts/NeusaNextPro/NeusaNextPro-Light.ttf
+          weight: 200
+        - asset: assets/fonts/NeusaNextPro/NeusaNextPro-Regular.ttf
+          weight: 200
+          style: normal
+
+        - asset: assets/fonts/NeusaNextPro/NeusaNextPro-WideLight.ttf
+          weight: 200
+        - asset: assets/fonts/NeusaNextPro/NeusaNextPro-WideRegular.ttf
+          weight: 200
+          style: normal
 
 
-  # An image asset can refer to one or more resolution-specific "variants", see
+  # An images asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
   # For details regarding adding assets from package dependencies, see

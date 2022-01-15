@@ -23,20 +23,17 @@ class Profile extends StatelessWidget {
               Row(
                 children: [
                   Button('voltar',
-                      onTap: () => Navigator.push(context,
-                          PageTransition(
-                              type: PageTransitionType.bottomToTop,
-                              duration: Duration(milliseconds: 400),
-                              child: HomePage())),
+                      onTap: () => Navigator.pop(context)
             ),
                 ],
               ),
               Container(
-                height: MediaQuery.of(context).size.height/4.5,
-                width: MediaQuery.of(context).size.height/4.5,
+                child: Icon(Icons.person, size: 100, color: kPrimaryColor,),
+                height: MediaQuery.of(context).size.height/7,
+                width: MediaQuery.of(context).size.height/7,
                 decoration: BoxDecoration(color: Colors.white,
                 border: Border.all(color: kPrimaryColor, width: 3,),
-                borderRadius: BorderRadius.circular(300),
+                    shape: BoxShape.circle,
                   boxShadow: [BoxShadow(
                     color: Colors.grey,
                     blurRadius: 10,
@@ -46,7 +43,7 @@ class Profile extends StatelessWidget {
               ),
               SizedBox(height: MediaQuery.of(context).size.height/30),
               Container(
-                height: MediaQuery.of(context).size.height/1.7,
+                height: MediaQuery.of(context).size.height/1.45,
                 width: MediaQuery.of(context).size.width/1.1,
                 decoration: BoxDecoration(
                   boxShadow: [BoxShadow(

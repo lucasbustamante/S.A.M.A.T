@@ -20,7 +20,7 @@ class Profile_Button extends StatelessWidget {
               blurRadius: 10,
               offset: Offset(0,10)
             )],
-            borderRadius: BorderRadius.circular(40),
+            shape: BoxShape.circle,
             border: Border.all(color: kPrimaryColor,width: 1.5)),
         child: Icon(Icons.person, size: MediaQuery.of(context).size.width/12,
           color: kPrimaryColor,),

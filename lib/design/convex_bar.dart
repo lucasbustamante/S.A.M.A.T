@@ -4,6 +4,7 @@ import 'package:page_transition/page_transition.dart';
 import 'package:tamas/design/colors.dart';
 import 'package:tamas/info_container.dart';
 
+import '../medical_add.dart';
 import '../profile.dart';
 
 class Convex_Bar extends StatefulWidget {
@@ -27,7 +28,7 @@ class _Convex_BarState extends State<Convex_Bar> {
                 Info_Container(
                   'REMÉDIOS',
                   button: 'adicionar remédio',
-                teste: (){Navigator.push(context, PageTransition(child: Profile(),
+                onTap: (){Navigator.push(context, PageTransition(child: Medical_Add(),
                     type: PageTransitionType.bottomToTop,
                 duration: Duration(milliseconds: 400)));},
                 info: 'Adicione novos remédios sempre que necessário'),
