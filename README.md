@@ -20,6 +20,6 @@ Style Guide do design do projeto
   <img src="/screens/styleguide.png" width="700" />
 
 ## Gif
-Gif demostrando andado do APP
+Gif demostrando andamento do APP
 <p float="left">
     <img src="/screens/gif.gif" width="250" />
